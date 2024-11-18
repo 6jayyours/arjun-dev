@@ -14,7 +14,7 @@ const Projects = () => {
 
         <div className="flex flex-col items-center justify-center">
           {PROJECTS.map((project, index) => (
-            <Card key={index} project={project} src={`/projects/${project.image}`} reverse={index % 2 !== 0} />
+            <Card key={index} project={project} src={`/arjun-dev/projects/${project.image}`} reverse={index % 2 !== 0} />
           ))}
         </div>
       </div>

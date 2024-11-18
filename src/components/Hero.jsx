@@ -17,7 +17,7 @@ const Hero = () => {
               playsInline
             ></video>
           </div>
-          <div className="absolute w-full h-full bg-primary opacity-[.93] flex flex-col justify-center items-center ">
+          <div className="absolute w-full h-full bg-primary opacity-[.69] flex flex-col justify-center items-center ">
             <div className="w-full text-center md:text-start md:px-4 font-rubik-distressed">
               <div className="flex flex-col md:flex-row items-center mb-4">
                 <h1 className="text-5xl md:text-8xl font-extrabold flex">

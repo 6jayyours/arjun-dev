@@ -1,8 +1,6 @@
 import React from "react";
 
 const Card = ({ project, src, reverse }) => {
-
-  console.log(project.imagePath)
   return (
     <div className="group max-w-5xl mb-16">
       <div
