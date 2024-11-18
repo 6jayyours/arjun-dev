@@ -3,7 +3,7 @@ name: Deploy
 on:
   push:
     branches:
-      - master # Trigger workflow on the master branch
+      - master
 
 jobs:
   build:
@@ -11,27 +11,20 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # Checkout the repository
       - name: Checkout repo
-        uses: actions/checkout@v3.5.1
+        uses: actions/checkout@v3
 
-      # Setup Node.js environment
-      - name: Setup Node.js
-        uses: actions/setup-node@v3.8.0
-        with:
-          node-version: '18' # Use LTS version or specify a preferred version
+      - name: Setup Node
+        uses: actions/setup-node@v3
 
-      # Install dependencies
       - name: Install dependencies
-        uses: bahmutov/npm-install@v2
+        uses: bahmutov/npm-install@v1
 
-      # Build the project
       - name: Build project
         run: npm run build
 
-      # Upload production-ready build files
       - name: Upload production-ready build files
-        uses: actions/upload-artifact@v3.1.2
+        uses: actions/upload-artifact@v3
         with:
           name: production-files
           path: ./dist
@@ -40,19 +33,17 @@ jobs:
     name: Deploy
     needs: build
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/master' # Ensure it runs only on master
+    if: github.ref == 'refs/heads/master'
 
     steps:
-      # Download the artifact produced in the build job
       - name: Download artifact
-        uses: actions/download-artifact@v3.1.2
+        uses: actions/download-artifact@v3
         with:
           name: production-files
           path: ./dist
 
-      # Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3.9.1
+        uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
