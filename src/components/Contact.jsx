@@ -38,30 +38,38 @@ const Contact = () => {
         <div className="w-full text-right mt-4">
           <div className="flex justify-center sm:justify-between gap-4 sm:gap-6">
             <div className="flex gap-4 sm:gap-6">
-              <motion.div
-                className="rounded-full w-12 h-12 flex items-center justify-center text-content hover:text-white hover:shadow-[0_0_15px_#fff]"
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.9 }}
-                transition={{ type: "spring", stiffness: 600, damping: 10 }}
-              >
-                <FaGithub size={30} />
-              </motion.div>
-              <motion.div
-                className="rounded-full w-12 h-12 flex items-center justify-center text-content hover:text-white hover:shadow-[0_0_15px_#fff]"
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.9 }}
-                transition={{ type: "spring", stiffness: 600, damping: 10 }}
-              >
-                <FaLinkedin size={30} />
-              </motion.div>
-              <motion.div
-                className="rounded-full w-12 h-12 flex items-center justify-center text-content hover:text-white hover:shadow-[0_0_15px_#fff]"
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.9 }}
-                transition={{ type: "spring", stiffness: 600, damping: 10 }}
-              >
-                <SiLeetcode size={30} />
-              </motion.div>
+              <a href="https://github.com/6jayyours">
+                <motion.div
+                  className="rounded-full w-12 h-12 flex items-center justify-center text-content hover:text-white hover:shadow-[0_0_15px_#fff]"
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.9 }}
+                  transition={{ type: "spring", stiffness: 600, damping: 10 }}
+                >
+                  <FaGithub size={30} />
+                </motion.div>
+              </a>
+
+              <a href="https://www.linkedin.com/in/marjunr/">
+                <motion.div
+                  className="rounded-full w-12 h-12 flex items-center justify-center text-content hover:text-white hover:shadow-[0_0_15px_#fff]"
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.9 }}
+                  transition={{ type: "spring", stiffness: 600, damping: 10 }}
+                >
+                  <FaLinkedin size={30} />
+                </motion.div>
+              </a>
+
+              <a target="_blank" href="https://leetcode.com/u/marjunramesh/">
+                <motion.div
+                  className="rounded-full w-12 h-12 flex items-center justify-center text-content hover:text-white hover:shadow-[0_0_15px_#fff]"
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.9 }}
+                  transition={{ type: "spring", stiffness: 600, damping: 10 }}
+                >
+                  <SiLeetcode size={30} />
+                </motion.div>
+              </a>
             </div>
             <div>
               <motion.button

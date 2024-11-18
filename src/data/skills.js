@@ -15,28 +15,28 @@ export const SKILLS = [
   {
     title: "Spring Boot",
     description:
-      "A powerful framework for building .",
+      "Backend development framework",
     icon: springIcon,
   },
   {
     title: "React",
     description:
-      "A popular JavaScript.",
+      "Library for building user interfaces.",
     icon: reactIcon,
   },
   {
     title: "MySQL",
-    description: "A widely used.",
+    description: "SQL database system.",
     icon: mysqlIcon,
   },
   {
     title: "Javascript",
-    description: "A widely used relational.",
+    description: "A programming language.",
     icon: javascriptIcon,
   },
   {
     title: "MongoDB",
-    description: "A widely used.",
+    description: "NoSQL database system.",
     icon: mongoIcon,
   },
 ];
