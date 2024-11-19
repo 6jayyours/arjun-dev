@@ -36,8 +36,8 @@ const Contact = () => {
 
         {/* Buttons Section */}
         <div className="w-full text-right mt-4">
-          <div className="flex justify-center sm:justify-between gap-4 sm:gap-6">
-            <div className="flex gap-4 sm:gap-6">
+          <div className="flex flex-col md:flex-row justify-center md:justify-between gap-4 sm:gap-6">
+            <div className="flex gap-4 sm:gap-6 justify-center">
               <a href="https://github.com/6jayyours">
                 <motion.div
                   className="rounded-full w-12 h-12 flex items-center justify-center text-content hover:text-white hover:shadow-[0_0_15px_#fff]"
@@ -71,7 +71,7 @@ const Contact = () => {
                 </motion.div>
               </a>
             </div>
-            <div className="flex gap-x-6">
+            <div className="flex gap-x-6 justify-center">
               <motion.button
                 className="bg-white text-black font-semibold py-2 px-6 rounded-lg shadow-xl"
                 whileHover={{ scale: 1.1 }}
