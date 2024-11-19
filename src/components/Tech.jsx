@@ -15,7 +15,7 @@ import {
 
 const Tech = () => {
   return (
-    <div className="wrapper w-full h-14 flex items-center">
+    <div className="wrapper hidden w-full h-14 md:flex items-center overflow-x-scroll no-scrollbar">
       <div className="item item1 flex gap-2 items-center justify-center" > <FaGithub />Github</div>
       <div className="item item2 flex gap-2 items-center justify-center" > <SiCloudinary />Cloudinary</div>
       <div className="item item3 flex gap-2 items-center justify-center" > <FaDocker />Docker</div>

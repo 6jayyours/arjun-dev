@@ -71,12 +71,29 @@ const Contact = () => {
                 </motion.div>
               </a>
             </div>
-            <div>
+            <div className="flex gap-x-6">
               <motion.button
                 className="bg-white text-black font-semibold py-2 px-6 rounded-lg shadow-xl"
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
                 transition={{ type: "spring", stiffness: 600, damping: 10 }}
+              >
+                <a
+                  href="/arjun-dev/resume/arjun.pdf" 
+                  download="Arjun_M_Resume.pdf" 
+                >
+                  Resume
+                </a>
+              </motion.button>
+              <motion.button
+                className="bg-white text-black font-semibold py-2 px-6 rounded-lg shadow-xl"
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+                transition={{ type: "spring", stiffness: 600, damping: 10 }}
+                onClick={() => {
+                  window.location.href =
+                    "mailto:marjunramesh@gmail.com?subject=Collaboration Inquiry&body=Hi Arjun, I’d like to discuss a";
+                }}
               >
                 Say hello!
               </motion.button>
